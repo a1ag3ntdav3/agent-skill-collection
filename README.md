@@ -172,9 +172,9 @@ AI agents (like Antigravity or Claude Code) can check out this repository and in
 ### Method A: Direct Remote Fetching (Recommended)
 An agent can query the raw GitHub content directly to find and download a skill without cloning the whole repository:
 1. **Fetch the manifest** from the raw URL to find matching skills:
-   `https://raw.githubusercontent.com/<owner>/<repo>/main/skills/manifest.json`
+   `https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/manifest.json`
 2. **Download the skill file** using its `filePath` field from the manifest entry:
-   `https://raw.githubusercontent.com/<owner>/<repo>/main/skills/<skill-id>.md`
+   `https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/<skill-id>.md`
 3. **Save it** in the user's project skill configuration directory (e.g. `.claude/skills/<skill-id>.md` or `.cursor/skills/<skill-id>.md`).
 
 ### Method B: Local Execution (Using the script)
@@ -198,7 +198,7 @@ A user prompts their local AI agent:
 ### Execution Flow
 1. **Manifest Retrieval**: The agent fetches `skills/manifest.json` from the repository:
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/georg/intelligent-planck/main/skills/manifest.json
+   curl -fsSL https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/manifest.json
    ```
 2. **Relevance Selection**: The agent parses the manifest and selects matching skills:
    - `grill-me`: To Socratic-interview the user about architectural choices (Firestore vs. Realtime DB, Firebase Functions vs. hosting).
@@ -209,11 +209,11 @@ A user prompts their local AI agent:
 3. **Automated Download**: The agent downloads the matching `.md` files directly into `.claude/skills/`:
    ```bash
    mkdir -p .claude/skills
-   curl -fsSL https://raw.githubusercontent.com/georg/intelligent-planck/main/skills/grill-me.md -o .claude/skills/grill-me.md
-   curl -fsSL https://raw.githubusercontent.com/georg/intelligent-planck/main/skills/superpowers.md -o .claude/skills/superpowers.md
-   curl -fsSL https://raw.githubusercontent.com/georg/intelligent-planck/main/skills/test-driven-development.md -o .claude/skills/test-driven-development.md
-   curl -fsSL https://raw.githubusercontent.com/georg/intelligent-planck/main/skills/diagnose.md -o .claude/skills/diagnose.md
-   curl -fsSL https://raw.githubusercontent.com/georg/intelligent-planck/main/skills/goal-driven-execution.md -o .claude/skills/goal-driven-execution.md
+   curl -fsSL https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/grill-me.md -o .claude/skills/grill-me.md
+   curl -fsSL https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/superpowers.md -o .claude/skills/superpowers.md
+   curl -fsSL https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/test-driven-development.md -o .claude/skills/test-driven-development.md
+   curl -fsSL https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/diagnose.md -o .claude/skills/diagnose.md
+   curl -fsSL https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/skills/goal-driven-execution.md -o .claude/skills/goal-driven-execution.md
    ```
 4. **Integration**: The local agent informs the user that the skills have been configured and are active in their workspace.
 

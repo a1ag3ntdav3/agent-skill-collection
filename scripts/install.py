@@ -6,7 +6,7 @@ import urllib.request
 import urllib.error
 import sys
 
-DEFAULT_REPO_RAW_URL = "https://raw.githubusercontent.com/georg/intelligent-planck/main/"
+DEFAULT_REPO_RAW_URL = "https://raw.githubusercontent.com/a1ag3ntdav3/agent-skill-collection/main/"
 
 def load_manifest(local_path, remote_url):
     # Try local first
