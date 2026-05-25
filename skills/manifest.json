@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "diagnose",
+      "title": "Diagnose & Fix",
+      "description": "The \"Diagnose & Fix\" skill (often triggered via `/diagnose`) is a systematic debugging methodology for AI agents. Rather than guessing the source of an error and making random code modifications, the agent enters a structured loop: observing symptoms, gathering diagnostic data (logs, traces, test outputs), forming hypotheses, writing isolated regression tests, and applying minimal corrections.",
+      "category": "Agentic Software Engineering",
+      "difficulty": "Advanced",
+      "tags": [
+        "debugging",
+        "diagnostic-loop",
+        "code-repair"
+      ],
+      "filePath": "skills/diagnose.md"
+    },
+    {
+      "id": "git-basics",
+      "title": "Git Basics",
+      "description": "Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. This skill covers the fundamental workflow required to initialize a repository, track changes, stage modifications, and commit revisions.",
+      "category": "Version Control",
+      "difficulty": "Beginner",
+      "tags": [
+        "git",
+        "vcs",
+        "collaboration"
+      ],
+      "filePath": "skills/git-basics.md"
+    },
+    {
+      "id": "goal-driven-execution",
+      "title": "Goal-Driven Execution",
+      "description": "Goal-Driven Execution (often triggered via `/goal` or autonomous background mode) allows an AI agent to run long-running tasks asynchronously. Instead of returning after a single tool execution or prompt turn, the agent runs in a continuous loop of planning, execution, verification, and adjustment. It does not stop until the high-level objective is fully achieved or determined to be impossible.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "autonomy",
+        "agent-loops",
+        "background-tasks",
+        "task-management"
+      ],
+      "filePath": "skills/goal-driven-execution.md"
+    },
+    {
+      "id": "grill-me",
+      "title": "Grill Me",
+      "description": "The \"Grill Me\" skill (often triggered via `/grill-me`) is a structured alignment methodology designed to prevent \"vibe coding.\" Instead of executing on vague or ambiguous prompts, the AI agent is instructed to act as a rigorous, Socratic interviewer, stress-testing requirements, architectural decisions, and edge cases before a single line of code is written.",
+      "category": "Planning & Alignment",
+      "difficulty": "Intermediate",
+      "tags": [
+        "alignment",
+        "planning",
+        "requirements",
+        "interactive"
+      ],
+      "filePath": "skills/grill-me.md"
+    },
+    {
+      "id": "llm-wiki",
+      "title": "LLM Wiki",
+      "description": "An LLM Wiki is a persistent, structured knowledge base composed of markdown files in a repository. Popularized by builders like Andrej Karpathy, this pattern serves as the agent's external memory. By reading from and writing to a dedicated `/skills` or `/wiki` folder, the agent maintains long-term context, architectural decisions, and domain-specific knowledge across sessions without relying on complex, external RAG pipelines.",
+      "category": "Knowledge & Memory",
+      "difficulty": "Intermediate",
+      "tags": [
+        "documentation",
+        "knowledge-base",
+        "memory",
+        "context"
+      ],
+      "filePath": "skills/llm-wiki.md"
+    },
+    {
+      "id": "prompt-engineering",
+      "title": "Prompt Engineering",
+      "description": "Prompt Engineering is the practice of structuring text inputs to large language models (LLMs) to ensure they produce the desired output. High-quality prompts combine context, instructions, input data, and formatting constraints to minimize hallucinations and maximize accuracy.",
+      "category": "LLM Interactions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "prompt",
+        "llm",
+        "instruction-following"
+      ],
+      "filePath": "skills/prompt-engineering.md"
+    },
+    {
+      "id": "superpowers",
+      "title": "Superpowers",
+      "description": "\"Superpowers\" is a comprehensive AI-assisted software development framework and methodology (historically popularized via projects like `obra/superpowers`). It shifts AI interactions from simple autocomplete or \"vibe coding\" into a disciplined software engineering process. It accomplishes this by defining formal roles, state-driven workflows, testing cycles, and subagent orchestration protocols.",
+      "category": "Agentic Software Engineering",
+      "difficulty": "Advanced",
+      "tags": [
+        "framework",
+        "workflows",
+        "architecture",
+        "engineering-rigor"
+      ],
+      "filePath": "skills/superpowers.md"
+    },
+    {
+      "id": "test-driven-development",
+      "title": "Test-Driven Development",
+      "description": "Test-Driven Development (often triggered via `/tdd` in agent toolkits) is a development methodology that forces the AI agent to write automated tests before implementing functional code. By establishing test expectations upfront, the agent ensures that all logic is verifiable, avoiding scope creep and producing clean, self-documenting code.",
+      "category": "Agentic Software Engineering",
+      "difficulty": "Advanced",
+      "tags": [
+        "testing",
+        "quality",
+        "workflows",
+        "coding-rigor"
+      ],
+      "filePath": "skills/test-driven-development.md"
+    }
+  ]
+}
