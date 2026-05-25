@@ -30,9 +30,10 @@ def load_manifest(local_path, remote_url):
         sys.exit(1)
 
 def install_skill(skill, dest_dir, local_repo_dir, remote_url, is_remote):
-    os.makedirs(dest_dir, exist_ok=True)
-    filename = os.path.basename(skill['filePath'])
-    dest_path = os.path.join(dest_dir, filename)
+    # Each skill is placed in its own subdirectory matching the skill's ID
+    skill_dest_dir = os.path.join(dest_dir, skill['id'])
+    os.makedirs(skill_dest_dir, exist_ok=True)
+    dest_path = os.path.join(skill_dest_dir, "SKILL.md")
     
     if is_remote:
         src_url = remote_url.rstrip('/') + "/" + skill['filePath']

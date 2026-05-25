@@ -54,5 +54,5 @@ graph TD
 
 ## How to Contribute
 1. Place raw suggestions or community scraped skills in the `raw_inputs/` folder.
-2. Ingest agents will read these inputs, determine if they represent a new skill or augmentations to an existing one, and write changes to `/skills`.
+2. Ingest agents will read these inputs, determine if they represent a new skill or augmentations to an existing one, and write changes to `/wiki` and `/skills`.
 3. Run the validation tool to ensure the wiki's formatting and linking consistency is intact.

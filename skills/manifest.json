@@ -3,7 +3,7 @@
     {
       "id": "diagnose",
       "title": "Diagnose & Fix",
-      "description": "The \"Diagnose & Fix\" skill (often triggered via `/diagnose`) is a systematic debugging methodology for AI agents. Rather than guessing the source of an error and making random code modifications, the agent enters a structured loop: observing symptoms, gathering diagnostic data (logs, traces, test outputs), forming hypotheses, writing isolated regression tests, and applying minimal corrections.",
+      "description": "Systematic debugging and regression testing procedures.",
       "category": "Agentic Software Engineering",
       "difficulty": "Advanced",
       "tags": [
@@ -11,12 +11,13 @@
         "diagnostic-loop",
         "code-repair"
       ],
-      "filePath": "skills/diagnose.md"
+      "wikiPath": "wiki/diagnose.md",
+      "filePath": "skills/diagnose/SKILL.md"
     },
     {
       "id": "git-basics",
       "title": "Git Basics",
-      "description": "Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. This skill covers the fundamental workflow required to initialize a repository, track changes, stage modifications, and commit revisions.",
+      "description": "Learn how to track changes, commit progress, and collaborate in code bases.",
       "category": "Version Control",
       "difficulty": "Beginner",
       "tags": [
@@ -24,12 +25,13 @@
         "vcs",
         "collaboration"
       ],
-      "filePath": "skills/git-basics.md"
+      "wikiPath": "wiki/git-basics.md",
+      "filePath": "skills/git-basics/SKILL.md"
     },
     {
       "id": "goal-driven-execution",
       "title": "Goal-Driven Execution",
-      "description": "Goal-Driven Execution (often triggered via `/goal` or autonomous background mode) allows an AI agent to run long-running tasks asynchronously. Instead of returning after a single tool execution or prompt turn, the agent runs in a continuous loop of planning, execution, verification, and adjustment. It does not stop until the high-level objective is fully achieved or determined to be impossible.",
+      "description": "Managing background task loops, error correction, and goal achievement.",
       "category": "Autonomous Workflows",
       "difficulty": "Advanced",
       "tags": [
@@ -38,12 +40,13 @@
         "background-tasks",
         "task-management"
       ],
-      "filePath": "skills/goal-driven-execution.md"
+      "wikiPath": "wiki/goal-driven-execution.md",
+      "filePath": "skills/goal-driven-execution/SKILL.md"
     },
     {
       "id": "grill-me",
       "title": "Grill Me",
-      "description": "The \"Grill Me\" skill (often triggered via `/grill-me`) is a structured alignment methodology designed to prevent \"vibe coding.\" Instead of executing on vague or ambiguous prompts, the AI agent is instructed to act as a rigorous, Socratic interviewer, stress-testing requirements, architectural decisions, and edge cases before a single line of code is written.",
+      "description": "Socratic requirements gathering and stress-testing to avoid vibe coding.",
       "category": "Planning & Alignment",
       "difficulty": "Intermediate",
       "tags": [
@@ -52,12 +55,13 @@
         "requirements",
         "interactive"
       ],
-      "filePath": "skills/grill-me.md"
+      "wikiPath": "wiki/grill-me.md",
+      "filePath": "skills/grill-me/SKILL.md"
     },
     {
       "id": "llm-wiki",
       "title": "LLM Wiki",
-      "description": "An LLM Wiki is a persistent, structured knowledge base composed of markdown files in a repository. Popularized by builders like Andrej Karpathy, this pattern serves as the agent's external memory. By reading from and writing to a dedicated `/skills` or `/wiki` folder, the agent maintains long-term context, architectural decisions, and domain-specific knowledge across sessions without relying on complex, external RAG pipelines.",
+      "description": "Maintaining persistent, structured codebase-level knowledge bases.",
       "category": "Knowledge & Memory",
       "difficulty": "Intermediate",
       "tags": [
@@ -66,12 +70,13 @@
         "memory",
         "context"
       ],
-      "filePath": "skills/llm-wiki.md"
+      "wikiPath": "wiki/llm-wiki.md",
+      "filePath": "skills/llm-wiki/SKILL.md"
     },
     {
       "id": "prompt-engineering",
       "title": "Prompt Engineering",
-      "description": "Prompt Engineering is the practice of structuring text inputs to large language models (LLMs) to ensure they produce the desired output. High-quality prompts combine context, instructions, input data, and formatting constraints to minimize hallucinations and maximize accuracy.",
+      "description": "Techniques for structuring text prompts, using Chain-of-Thought, and enforcing schemas.",
       "category": "LLM Interactions",
       "difficulty": "Intermediate",
       "tags": [
@@ -79,12 +84,13 @@
         "llm",
         "instruction-following"
       ],
-      "filePath": "skills/prompt-engineering.md"
+      "wikiPath": "wiki/prompt-engineering.md",
+      "filePath": "skills/prompt-engineering/SKILL.md"
     },
     {
       "id": "superpowers",
       "title": "Superpowers",
-      "description": "\"Superpowers\" is a comprehensive AI-assisted software development framework and methodology (historically popularized via projects like `obra/superpowers`). It shifts AI interactions from simple autocomplete or \"vibe coding\" into a disciplined software engineering process. It accomplishes this by defining formal roles, state-driven workflows, testing cycles, and subagent orchestration protocols.",
+      "description": "Structured multi-agent orchestration, planning, development, and review lifecycle.",
       "category": "Agentic Software Engineering",
       "difficulty": "Advanced",
       "tags": [
@@ -93,12 +99,13 @@
         "architecture",
         "engineering-rigor"
       ],
-      "filePath": "skills/superpowers.md"
+      "wikiPath": "wiki/superpowers.md",
+      "filePath": "skills/superpowers/SKILL.md"
     },
     {
       "id": "test-driven-development",
       "title": "Test-Driven Development",
-      "description": "Test-Driven Development (often triggered via `/tdd` in agent toolkits) is a development methodology that forces the AI agent to write automated tests before implementing functional code. By establishing test expectations upfront, the agent ensures that all logic is verifiable, avoiding scope creep and producing clean, self-documenting code.",
+      "description": "Strict red-green-refactor loops at the agent level.",
       "category": "Agentic Software Engineering",
       "difficulty": "Advanced",
       "tags": [
@@ -107,7 +114,8 @@
         "workflows",
         "coding-rigor"
       ],
-      "filePath": "skills/test-driven-development.md"
+      "wikiPath": "wiki/test-driven-development.md",
+      "filePath": "skills/test-driven-development/SKILL.md"
     }
   ]
 }
