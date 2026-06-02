@@ -1,6 +1,51 @@
 {
   "skills": [
     {
+      "id": "agent-hand-offs",
+      "title": "Agent Hand-offs",
+      "description": "Lightweight multi-agent coordination pattern where agents transfer execution control dynamically.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Intermediate",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "routing",
+        "swarm"
+      ],
+      "wikiPath": "wiki/agent-hand-offs.md",
+      "filePath": "skills/agent-hand-offs/SKILL.md"
+    },
+    {
+      "id": "chain-of-verification",
+      "title": "Chain of Verification",
+      "description": "Reduce hallucinations by generating a baseline response, drafting verification questions, answering them independently, and synthesizing a corrected output.",
+      "category": "LLM Interactions",
+      "difficulty": "Advanced",
+      "tags": [
+        "verification",
+        "hallucination-mitigation",
+        "reasoning",
+        "fact-checking"
+      ],
+      "wikiPath": "wiki/chain-of-verification.md",
+      "filePath": "skills/chain-of-verification/SKILL.md"
+    },
+    {
+      "id": "corrective-rag",
+      "title": "Corrective RAG",
+      "description": "RAG workflow with self-evaluation, web search fallback, and context filtering.",
+      "category": "Knowledge & Memory",
+      "difficulty": "Advanced",
+      "tags": [
+        "rag",
+        "evaluation",
+        "search",
+        "self-correction"
+      ],
+      "wikiPath": "wiki/corrective-rag.md",
+      "filePath": "skills/corrective-rag/SKILL.md"
+    },
+    {
       "id": "diagnose",
       "title": "Diagnose & Fix",
       "description": "Systematic debugging and regression testing procedures.",
@@ -13,6 +58,36 @@
       ],
       "wikiPath": "wiki/diagnose.md",
       "filePath": "skills/diagnose/SKILL.md"
+    },
+    {
+      "id": "evaluator-optimizer",
+      "title": "Evaluator-Optimizer",
+      "description": "Iterative refinement loop with a generator producing outputs and an evaluator critiquing them.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "evaluation",
+        "optimization",
+        "critique",
+        "refinement"
+      ],
+      "wikiPath": "wiki/evaluator-optimizer.md",
+      "filePath": "skills/evaluator-optimizer/SKILL.md"
+    },
+    {
+      "id": "flow-engineering",
+      "title": "Flow Engineering",
+      "description": "Construct deterministic agent control flows and state machines for predictable execution paths.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Intermediate",
+      "tags": [
+        "workflow",
+        "state-machine",
+        "control-flow",
+        "reliability"
+      ],
+      "wikiPath": "wiki/flow-engineering.md",
+      "filePath": "skills/flow-engineering/SKILL.md"
     },
     {
       "id": "git-basics",
@@ -44,6 +119,21 @@
       "filePath": "skills/goal-driven-execution/SKILL.md"
     },
     {
+      "id": "graph-rag",
+      "title": "GraphRAG",
+      "description": "Graph-based Retrieval-Augmented Generation for multi-hop reasoning and relational context retrieval.",
+      "category": "Knowledge & Memory",
+      "difficulty": "Advanced",
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "information-retrieval",
+        "structured-data"
+      ],
+      "wikiPath": "wiki/graph-rag.md",
+      "filePath": "skills/graph-rag/SKILL.md"
+    },
+    {
       "id": "grill-me",
       "title": "Grill Me",
       "description": "Socratic requirements gathering and stress-testing to avoid vibe coding.",
@@ -57,6 +147,21 @@
       ],
       "wikiPath": "wiki/grill-me.md",
       "filePath": "skills/grill-me/SKILL.md"
+    },
+    {
+      "id": "human-in-the-loop",
+      "title": "Human-in-the-Loop",
+      "description": "Orchestration pattern requiring explicit human verification or modification for critical actions.",
+      "category": "Planning & Alignment",
+      "difficulty": "Intermediate",
+      "tags": [
+        "alignment",
+        "safety",
+        "interruption",
+        "approval"
+      ],
+      "wikiPath": "wiki/human-in-the-loop.md",
+      "filePath": "skills/human-in-the-loop/SKILL.md"
     },
     {
       "id": "llm-wiki",
@@ -74,6 +179,145 @@
       "filePath": "skills/llm-wiki/SKILL.md"
     },
     {
+      "id": "memory-consolidation",
+      "title": "Memory Consolidation",
+      "description": "Distill episodic execution traces, logs, and error recovery steps into structured long-term semantic knowledge to optimize context and recall lessons.",
+      "category": "Knowledge & Memory",
+      "difficulty": "Advanced",
+      "tags": [
+        "memory",
+        "cognitive-architecture",
+        "semantic-memory",
+        "consolidation"
+      ],
+      "wikiPath": "wiki/memory-consolidation.md",
+      "filePath": "skills/memory-consolidation/SKILL.md"
+    },
+    {
+      "id": "mixture-of-agents",
+      "title": "Mixture of Agents",
+      "description": "Layered multi-agent pattern that runs multiple LLM calls in parallel and aggregates their outputs across sequential steps to improve response quality.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "multi-agent",
+        "mixture-of-agents",
+        "orchestration",
+        "consensus",
+        "parallel-processing"
+      ],
+      "wikiPath": "wiki/mixture-of-agents.md",
+      "filePath": "skills/mixture-of-agents/SKILL.md"
+    },
+    {
+      "id": "model-context-protocol",
+      "title": "Model Context Protocol",
+      "description": "Standardized client-server framework for LLMs to securely query resources, prompts, and tools.",
+      "category": "LLM Interactions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "mcp",
+        "tools",
+        "api-integration",
+        "standards"
+      ],
+      "wikiPath": "wiki/model-context-protocol.md",
+      "filePath": "skills/model-context-protocol/SKILL.md"
+    },
+    {
+      "id": "multi-agent-debate",
+      "title": "Multi-Agent Debate",
+      "description": "Structured multi-turn debate among peer agents to stress-test reasoning and reach a high-quality consensus.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "collaboration",
+        "multi-agent",
+        "reasoning",
+        "consensus",
+        "evaluation"
+      ],
+      "wikiPath": "wiki/multi-agent-debate.md",
+      "filePath": "skills/multi-agent-debate/SKILL.md"
+    },
+    {
+      "id": "orchestrator-workers",
+      "title": "Orchestrator-Workers",
+      "description": "Supervisor agent decomposing tasks and coordinating specialized worker agents.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "orchestration",
+        "decomposition",
+        "parallelization",
+        "coordination"
+      ],
+      "wikiPath": "wiki/orchestrator-workers.md",
+      "filePath": "skills/orchestrator-workers/SKILL.md"
+    },
+    {
+      "id": "parallelization",
+      "title": "Parallelization",
+      "description": "Execute multiple LLM calls concurrently, using either sectioning (independent subtasks) or voting (generating candidates for consensus), then aggregate the results.",
+      "category": "LLM Interactions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "parallel-execution",
+        "voting",
+        "sectioning",
+        "performance"
+      ],
+      "wikiPath": "wiki/parallelization.md",
+      "filePath": "skills/parallelization/SKILL.md"
+    },
+    {
+      "id": "piv-loop",
+      "title": "Plan-Implement-Validate Loop (PIV Loop)",
+      "description": "Plan-Implement-Validate (PIV) Loop to bring discipline to agentic coding and avoid vibe coding.",
+      "category": "Agentic Software Engineering",
+      "difficulty": "Advanced",
+      "tags": [
+        "engineering-rigor",
+        "software-development",
+        "testing",
+        "context-management",
+        "workflow"
+      ],
+      "wikiPath": "wiki/piv-loop.md",
+      "filePath": "skills/piv-loop/SKILL.md"
+    },
+    {
+      "id": "plan-and-execute",
+      "title": "Plan-and-Execute",
+      "description": "Decouple planning from execution by generating a step-by-step plan first, executing each step sequentially, and dynamically re-planning if errors occur.",
+      "category": "Planning & Alignment",
+      "difficulty": "Advanced",
+      "tags": [
+        "planning",
+        "execution",
+        "autonomy",
+        "workflows",
+        "task-decomposition"
+      ],
+      "wikiPath": "wiki/plan-and-execute.md",
+      "filePath": "skills/plan-and-execute/SKILL.md"
+    },
+    {
+      "id": "prompt-chaining",
+      "title": "Prompt Chaining",
+      "description": "Decompose complex tasks into a sequential pipeline of LLM calls, with optional programmatic validation between steps.",
+      "category": "LLM Interactions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "prompting",
+        "chaining",
+        "workflows",
+        "reliability"
+      ],
+      "wikiPath": "wiki/prompt-chaining.md",
+      "filePath": "skills/prompt-chaining/SKILL.md"
+    },
+    {
       "id": "prompt-engineering",
       "title": "Prompt Engineering",
       "description": "Techniques for structuring text prompts, using Chain-of-Thought, and enforcing schemas.",
@@ -86,6 +330,82 @@
       ],
       "wikiPath": "wiki/prompt-engineering.md",
       "filePath": "skills/prompt-engineering/SKILL.md"
+    },
+    {
+      "id": "reason-and-act",
+      "title": "Reason and Act",
+      "description": "Reusable execution loop alternating between reasoning (Thought) and tool execution (Action / Observation).",
+      "category": "LLM Interactions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "react",
+        "reasoning",
+        "tool-use",
+        "loop"
+      ],
+      "wikiPath": "wiki/reason-and-act.md",
+      "filePath": "skills/reason-and-act/SKILL.md"
+    },
+    {
+      "id": "reflexion",
+      "title": "Reflexion",
+      "description": "Execute the Reflexion loop to iteratively refine agent outputs using self-critique and persistent failure memory.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "self-correction",
+        "memory",
+        "optimization",
+        "evaluation"
+      ],
+      "wikiPath": "wiki/reflexion.md",
+      "filePath": "skills/reflexion/SKILL.md"
+    },
+    {
+      "id": "routing",
+      "title": "Routing",
+      "description": "Classification-based redirection of tasks to specialized prompts, models, or sub-agents.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Intermediate",
+      "tags": [
+        "routing",
+        "classification",
+        "multi-agent",
+        "efficiency"
+      ],
+      "wikiPath": "wiki/routing.md",
+      "filePath": "skills/routing/SKILL.md"
+    },
+    {
+      "id": "self-discovery",
+      "title": "Self-Discovery",
+      "description": "Autonomously select, adapt, and compose custom reasoning modules to form a tailored cognitive plan for complex tasks.",
+      "category": "Planning & Alignment",
+      "difficulty": "Advanced",
+      "tags": [
+        "planning",
+        "cognitive-architecture",
+        "workflows",
+        "prompt-generation"
+      ],
+      "wikiPath": "wiki/self-discovery.md",
+      "filePath": "skills/self-discovery/SKILL.md"
+    },
+    {
+      "id": "self-rag",
+      "title": "Self-Reflective Retrieval-Augmented Generation",
+      "description": "Self-Reflective Retrieval-Augmented Generation (Self-RAG) pattern integrating self-critique of retrieved context relevance, output grounding, and utility.",
+      "category": "Knowledge & Memory",
+      "difficulty": "Advanced",
+      "tags": [
+        "rag",
+        "self-reflection",
+        "retrieval",
+        "evaluation",
+        "grounding"
+      ],
+      "wikiPath": "wiki/self-rag.md",
+      "filePath": "skills/self-rag/SKILL.md"
     },
     {
       "id": "superpowers",
@@ -103,6 +423,21 @@
       "filePath": "skills/superpowers/SKILL.md"
     },
     {
+      "id": "swarm-orchestration",
+      "title": "Swarm Orchestration",
+      "description": "Orchestrate decentralized teams of micro-agents that dynamically hand off control and coordinate task execution through fluid, peer-to-peer routing.",
+      "category": "Autonomous Workflows",
+      "difficulty": "Advanced",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "swarms",
+        "collaboration"
+      ],
+      "wikiPath": "wiki/swarm-orchestration.md",
+      "filePath": "skills/swarm-orchestration/SKILL.md"
+    },
+    {
       "id": "test-driven-development",
       "title": "Test-Driven Development",
       "description": "Strict red-green-refactor loops at the agent level.",
@@ -116,6 +451,52 @@
       ],
       "wikiPath": "wiki/test-driven-development.md",
       "filePath": "skills/test-driven-development/SKILL.md"
+    },
+    {
+      "id": "tool-maker",
+      "title": "Tool Maker",
+      "description": "Autonomously create, debug, test, and register custom code tools to solve specific recurring tasks and reuse them to save token costs and improve accuracy.",
+      "category": "LLM Interactions",
+      "difficulty": "Advanced",
+      "tags": [
+        "tool-use",
+        "code-generation",
+        "dynamic-execution",
+        "latm",
+        "autonomous-tools"
+      ],
+      "wikiPath": "wiki/tool-maker.md",
+      "filePath": "skills/tool-maker/SKILL.md"
+    },
+    {
+      "id": "tree-of-thoughts",
+      "title": "Tree of Thoughts",
+      "description": "Search and evaluate multiple alternative reasoning paths to solve complex, multi-step planning or logic tasks.",
+      "category": "LLM Interactions",
+      "difficulty": "Advanced",
+      "tags": [
+        "reasoning",
+        "planning",
+        "search",
+        "backtracking"
+      ],
+      "wikiPath": "wiki/tree-of-thoughts.md",
+      "filePath": "skills/tree-of-thoughts/SKILL.md"
+    },
+    {
+      "id": "virtual-context-management",
+      "title": "Virtual Context Management",
+      "description": "Manage LLM context window constraints using virtual memory paging, core memory edits, and episodic/archival data retrievals.",
+      "category": "Knowledge & Memory",
+      "difficulty": "Advanced",
+      "tags": [
+        "memory",
+        "context-window",
+        "cognitive-architecture",
+        "database"
+      ],
+      "wikiPath": "wiki/virtual-context-management.md",
+      "filePath": "skills/virtual-context-management/SKILL.md"
     }
   ]
 }
